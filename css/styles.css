@@ -6,9 +6,6 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,600,700,800,900&display=swap');
 
-* {
-    outline: 1px dotted black;
-}
 body{
   font-family: 'Roboto Slab', serif;
   color: white;
@@ -170,7 +167,7 @@ a:hover {
 
 /* Custom Control Styling */
 .plyr--full-ui input[type=range]{
-  color: #f27922;
+  color: #0066ff;
 }
 
 /* 
@@ -178,12 +175,6 @@ a:hover {
   * 384px = 24em
 */
 @media only screen and (min-width: 0) { 
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
   
 }
 
@@ -191,12 +182,6 @@ a:hover {
   * 768px = 48em 
 */
 @media only screen and (min-width: 24em)  {
-    
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
 
 }
 
@@ -204,12 +189,7 @@ a:hover {
   * 1152px = 72em
 */
 @media screen and (min-width: 72em)  { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+
 
 }
 
@@ -217,12 +197,7 @@ a:hover {
   * 1440px = 90em
 */
 @media screen and (min-width: 90em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Wide Desktop Size";
-  }
+
 
 }
 
