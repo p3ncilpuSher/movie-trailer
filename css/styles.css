@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,600,700,800,900&display=swap');
 
+/* Border Box */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
   font-family: 'Roboto Slab', serif;
   color: white;
