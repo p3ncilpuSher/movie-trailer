@@ -75,7 +75,7 @@ body {
 	background-size: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-	color: #1a1a1a;
+  color: whitesmoke;
 	height: 100%;
 }
 
@@ -222,6 +222,14 @@ img {
 	width: 100%;
 }
 
+figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
 p {
 	font-size: 15px;
 	line-height: 1.4em;
@@ -232,6 +240,8 @@ p:last-child {
 }
 
 main {
+  background-image: url(../img/background1.jpeg);
+  background-size: cover;
 	display: grid;
 	padding: 20px 20px 0 20px;
 	grid-template-columns: 1fr;
@@ -251,7 +261,7 @@ h1 {
 	font-weight: 700;
 	z-index: 3;
 	margin: -20px 0 0 0;
-	color: #0abdb6;
+	color: #e31e33;
 	transform: rotate(-2deg);
 	text-shadow: -8px 8px 0px white;
 	letter-spacing: -2px;
@@ -264,7 +274,7 @@ h2 {
 	margin: 0;
 	padding: 10px 30px;
 	color: #fff;
-	background-color: #6b0913;
+	background-color: #e31e33;
 	display: inline-block;
 	transform: rotate(2deg);
 	justify-self: flex-end;
@@ -293,14 +303,17 @@ h2 {
 	grid-row: 3;
 }
 
+.explosion {
+  grid-row: 4;
+}
+
 .headers {
 	grid-row: 1;
 	padding: 0;
 }
 
 .image {
-	grid-column: 1;
-	grid-row: 6;
+	grid-row: 3;
 	position: relative;
 	margin-bottom: -50px;
 }
@@ -324,9 +337,14 @@ h2 {
 		grid-template-columns: 5% 1fr 5%;
 	}
 
+  aside {
+    position: relative;
+    top: 200px;
+  }
+
 	main {
 		padding: 20px 20px 0;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px 50px;
 		grid-column: 2;
 	}
@@ -351,9 +369,14 @@ h2 {
 		grid-column: 1/-1;
 	}
 
+  .trailer {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
 	.div-one {
 		grid-column: 1/-1;
-    grid-row: 2;
+    grid-row: 3;
 		overflow: visible;
 		padding: 0;
 	}
@@ -361,11 +384,6 @@ h2 {
 	.image-pull + p {
 		margin-top: 50px;
 	}
-
-  .trailer {
-    grid-column: 1/-1;
-    grid-row: 4;
-  }
   
 	.div-two {
 		grid-column: 1/-1;
@@ -375,8 +393,8 @@ h2 {
 	}
 
 	.image {
-		grid-column: 1;
-		grid-row: 5;
+		grid-column: 2;
+		grid-row: 4;
 		margin-left: -300px;
 	}
 
@@ -392,9 +410,11 @@ h2 {
 	}
 
 	.main-quote {
-		grid-column: 1/-1;
+    top: 100px;
+		grid-column: 3;
     grid-row: 3;
-		padding: 20px;
+    padding: 20px;
+    position: relative;
 		max-width: 60%;
 		margin: 40px auto 0;
 	}
@@ -427,7 +447,14 @@ h2 {
 		grid-template-columns: 1fr 1fr 2fr;
 		grid-gap: 50px 4vw;
 		padding: 50px 100px 0;
-	}
+  }
+  
+  aside {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+    top: 200px;
+  }
 
 	.headers {
 		grid-column: 2/4;
@@ -440,7 +467,7 @@ h2 {
 
 	h1 {
     position: absolute;
-		font-size: 7vw;
+    font-size: 7vw;
     right: 100px;
 	}
 
@@ -460,7 +487,7 @@ h2 {
 		grid-column: 1/3;
 		grid-row: 1;
 		padding: 50px 80px;
-		color: #6b0913;
+		color: #e31e33;
 		font-size: 40px;
 		font-weight: 700;
 		max-width: 100%;
@@ -478,15 +505,16 @@ h2 {
 	}
   
   figure {
-    width: 200px;
-    margin: 0 20px 20px 0;
+    width: 350px;
+    margin: 50px 50px 0 0;
   }
   
 	.div-two {
     display: flex;
     flex-wrap: wrap;
-		grid-column: 1 / 3;
-		grid-row: 5;
+		grid-column: 1 / -1;
+    grid-row: 5;
+    justify-content: center;
 	}
 
 
@@ -497,11 +525,21 @@ h2 {
 		align-self: flex-end;
 		z-index: 1;
 		margin-left: -150px;
-	}
+  }
+  
+  .explosion {
+    grid-row: 3;
+    grid-column: 3;
+  }
   
   .trailer {
     grid-column: 1/3;
     grid-row: 2;
+  }
+
+  footer {
+    grid-column: 1;
+    grid-row: 6;
   }
 }
 
